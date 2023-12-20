@@ -1,0 +1,71 @@
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    border-bottom:1px solid $g_s5;
+    background:$c_wt;
+    z-index:100;
+
+    &__inner {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width:1200px;
+        height:100%;
+        margin:0 auto;
+    }
+
+    &__logo {
+        a {
+            display:block;
+            width:120px;
+            height:36px;
+            line-height:36px;
+            font: {
+                size: 24px;
+                weight:700;
+            }
+        }
+    }
+
+    &__sch {
+        position:absolute;
+        top:50%;
+        left:50%;
+        width:440px;
+        height:44px;
+        border:1px solid $g_s4;
+        border-radius:40px;
+        overflow:hidden;
+        transform:translate(-50%, -50%);
+
+        input {
+            width:100%;
+            line-height:42px;
+            font-size:15px;
+            font-weight:500;
+            letter-spacing:-0.025rem;
+            padding:0 48px 0 16px;
+            outline:none;
+        }
+
+        &__btn {
+            position:absolute;
+            top:50%;
+            right:4px;
+            width:40px;
+            height:40px;
+            background:url(/assets/images/sch_ico.svg) 50% 50%/24px auto no-repeat;
+            margin:-20px 0 0;
+        }
+    }
+
+    &__btn {
+        display:none;
+        width:44px;
+        height:44px;
+        background:url(/assets/images/menu_ico.svg) 50% 50%/32px auto no-repeat;
+    }
+}

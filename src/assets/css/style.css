@@ -1,0 +1,332 @@
+.bd_16px {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.bd_32px {
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.bd_28px {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.bd_24px {
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.bd_20px {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.bd_14px {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+/* Headline Size */
+.hd_line160px {
+  font-size: 160px;
+  line-height: 1.5;
+}
+
+.hd_line120px {
+  font-size: 120px;
+  line-height: 1.5;
+}
+
+.hd_line100px {
+  font-size: 100px;
+  line-height: 1.5;
+}
+
+.hd_line72px {
+  font-size: 72px;
+  line-height: 1.5;
+}
+
+.hd_line64px {
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.hd_line48px {
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.hd_line36px {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.main__vis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 320px;
+  background: url(/assets/images/main_vis.jpg) 50% 0/cover no-repeat;
+  text-align: center;
+}
+.main__vis h2 {
+  font-size: 28px;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+.main__vis h2 strong {
+  display: block;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.main__cat {
+  margin: 100px auto;
+}
+.main__cat__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+  gap: 60px 5%;
+}
+.main__cat__list li {
+  width: 30%;
+  height: 180px;
+  background: #f1f1f1;
+  text-align: center;
+  padding: 24px;
+  border-radius: 10px;
+}
+.main__cat__list a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: #130c80;
+}
+.main__cat__list p {
+  margin: 12px 0 0;
+}
+.main__faq {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+.main__faq__ttl {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+.main__faq__lst {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+  gap: 24px 2%;
+}
+.main__faq__lst li {
+  position: relative;
+  width: 49%;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.025rem;
+  padding: 0 0 0 40px;
+}
+.main__faq__lst li .num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #130c80;
+}
+.main__faq__lst li a {
+  display: inline-block;
+  word-break: keep-all;
+}
+
+.wiki__container {
+  position: relative;
+  display: flex;
+  width: 1200px;
+  min-height: calc(100vh - 161px);
+  margin: 0 auto;
+}
+.wiki__side {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  left: 0;
+  width: 18.75%;
+  height: calc(100vh - 161px);
+  padding: 48px 20px;
+  border-right: 1px solid #eee;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 9;
+}
+.wiki__side__nav a:hover {
+  color: #0a00cb;
+}
+.wiki__side__nav > li {
+  margin: 20px 0 0;
+  letter-spacing: -0.015em;
+}
+.wiki__side__nav > li:first-child {
+  margin: 0;
+}
+.wiki__side__nav > li > a {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.wiki__side__nav > li.on .wiki__side__dep {
+  display: block;
+}
+.wiki__side__nav > li.on > a {
+  font-weight: 700;
+  color: #0a00cb;
+}
+.wiki__side__dep {
+  display: none;
+  padding: 4px 0 10px 16px;
+}
+.wiki__side__dep li {
+  margin: 8px 0 0;
+}
+.wiki__side__dep a {
+  font-size: 17px;
+  line-height: 1.2;
+}
+.wiki__contents {
+  width: 81.25%;
+  padding: 48px 23px 48px 40px;
+}
+.wiki__contents__inner {
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  color: #333;
+  word-break: keep-all;
+}
+.wiki__contents h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.wiki__contents h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.wiki__contents h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.wiki__contents h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.wiki__contents h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.wiki__contents h1 {
+  margin: 0 0 32px;
+  color: #121212;
+}
+.wiki__contents h2 {
+  padding: 20px 0 16px;
+  color: #121212;
+}
+.wiki__contents h3 {
+  padding: 16px 0 0;
+}
+.wiki__contents ul, .wiki__contents ol, .wiki__contents p {
+  line-height: 1.6;
+  padding-bottom: 1.2em;
+}
+.wiki__contents ol {
+  padding-left: 1.2em;
+  list-style: decimal;
+}
+.wiki__contents ol li {
+  margin: 0.6em 0 0;
+}
+.wiki__contents ol li > a {
+  color: #0a00cb;
+}
+.wiki__contents ul li {
+  padding-left: 1em;
+}
+.wiki__contents ul li > a {
+  color: #0a00cb;
+}
+.wiki__contents p > a {
+  color: #0a00cb;
+}
+.wiki__contents strong, .wiki__contents b {
+  font-weight: 700;
+}
+.wiki__contents img, .wiki__contents video {
+  max-width: 100%;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin: 12px 0;
+  vertical-align: middle;
+}
+.wiki__contents a:hover {
+  color: #0a00cb;
+  text-decoration: underline;
+}
+.wiki__contents blockquote {
+  display: inline-block;
+  padding-left: 1.2em;
+  border-left: 4px solid #d5d5d5;
+  color: #999;
+  margin: 0.6em 0 1.2em;
+}
+.wiki__contents blockquote p:last-of-type {
+  padding-bottom: 0;
+}
+.wiki__contents .faq__lst li > a {
+  color: #121212;
+}
+.wiki__sch {
+  padding: 48px 24px;
+}
+.wiki__sch__lst li {
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  margin: 32px 0 0;
+}
+.wiki__sch__lst li:first-child {
+  margin-top: 0;
+}
+.wiki__sch__lst li p {
+  font-size: 17px;
+  color: #333;
+  display: -webkit-box;
+  max-height: 44px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.wiki__sch__ttl {
+  display: inline-block;
+  font-size: 24px;
+  margin: 0 0 8px;
+  transition: none;
+}
+.wiki__sch__ttl:hover {
+  color: #0a00cb;
+  text-decoration: underline;
+}

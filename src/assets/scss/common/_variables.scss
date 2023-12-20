@@ -1,0 +1,96 @@
+// Colors
+$pmg_nav            :#130c80;
+$pmg_yel            :#fbbc17;
+$pmg_org            :#ff951b;
+$pmg_ord            :#ff4f00;
+$pmg_grn            :#00a477;
+$pmg_pur            :#c7005c;
+$pmg_vio            :#52006a;
+$pmg_blu            :#0a00cb;
+
+$c_primary          :#0a00cb;
+
+$c_negative         :#ff2323;
+$c_warning          :#f0ad4e;
+$c_positive         :#5cb85c;
+$c_neutral          :#5bc0de;
+
+// Typography
+$ff_ko : 'Montserrat', 'NotoSans', sans-serif !default;
+$ff_en : 'Montserrat', sans-serif !default; // 영어
+
+$c_bk           :#000;
+$c_wt           :#fff;
+$g_s1           :#333;
+$g_s2           :#666;
+$g_s3           :#999;
+$g_s4           :#d5d5d5;
+$g_s5           :#eee;
+$g_s6           :#f5f5f5;
+
+$c_light        :#f8f9fa;
+$c_dark         :#121212;
+$c_disable      :#979797;
+
+// Font Sizes
+$bd_base : 16px; // 16px
+$bd_1 : 32px; // 28px
+$bd_2 : 28px; // 24px
+$bd_3 : 24px; // 20px
+$bd_4 : 20px; // 18px
+$bd_5 : 14px; // 14px
+
+$hd_line1 : 160px;
+$hd_line2 : 120px;
+$hd_line3 : 100px;
+$hd_line4 : 72px;
+$hd_line5 : 64px;
+$hd_line6 : 48px;
+$hd_line7 : 36px;
+
+$body : (
+    $bd_base : 16px,
+    $bd_1 : 32px,
+    $bd_2 : 28px,
+    $bd_3 : 24px,
+    $bd_4 : 20px,
+    $bd_5 : 14px
+);
+
+@each $i, $size in $body {
+    .bd_#{$i} {
+        font-size:$size;
+        line-height:1.3;
+    }
+}
+
+/* Headline Size */
+$headline : (
+    $hd_line1 : 160px,
+    $hd_line2 : 120px,
+    $hd_line3 : 100px,
+    $hd_line4 : 72px,
+    $hd_line5 : 64px,
+    $hd_line6 : 48px,
+    $hd_line7 : 36px
+);
+
+@each $i, $size in $headline {
+    .hd_line#{$i} {
+        font-size:$size;
+        line-height:1.5;
+    }
+}
+
+// Media Query Break Point
+$desktop_wide_width      : 2560px;
+$desktop_full_width      : 1920px;
+$desktop_l_width         : 1680px;
+$desktop_m_width         : 1440px;
+$desktop_s_width         : 1280px;
+$tablet_l_width          : 1024px;
+$tablet_s_width          : 840px;
+$tablet_ss_width         : 768px;
+$mobile_l_width          : 480px;
+$mobile_m_width          : 375px;
+$mobile_s_width          : 320px; 

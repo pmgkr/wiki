@@ -1,0 +1,326 @@
+@charset "UTF-8";
+@import './common/_variables.scss';
+@import './common/_mixin.scss';
+
+.main {
+    &__vis {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        height:320px;
+        background:url(/assets/images/main_vis.jpg) 50% 0/cover no-repeat;
+        text-align:center;
+
+        h2 {
+            font-size:$bd_2;
+            line-height:1.3;
+            letter-spacing:-0.025em;
+            color:$c_wt;
+
+            strong {
+                display:block;
+                font-size:1.4em;
+                font-weight:500;
+            }
+        }
+    }
+
+    &__cat {
+        margin:100px auto;
+
+        &__list {
+            display:flex;
+            flex-wrap:wrap;
+            width:1100px;
+            margin:0 auto;
+            gap:60px 5%;
+
+            li {
+                width:30%;
+                height:180px;
+                background:#f1f1f1;
+                text-align:center;
+                padding:24px;
+                border-radius:10px;
+            }
+
+            a {
+                display:flex;
+                justify-content:center;
+                align-items:flex-end;
+                width:100%;
+                height:100%;
+                font-size:18px;
+                font-weight:500;
+                letter-spacing:-0.025em;
+                color:$pmg_nav;
+            }
+
+            p {
+                margin:12px 0 0;
+            }
+        }
+    }
+
+    &__faq {
+        padding:80px 0;
+        background:$c_light;
+
+        &__ttl {
+            font-size:$bd_1;
+            font-weight:500;
+            letter-spacing:-0.025rem;
+            text-align:center;
+            margin:0 auto 50px;
+        }
+
+        &__lst {
+            display:flex;
+            flex-wrap:wrap;
+            width:1100px;
+            margin:0 auto;
+            gap:24px 2%;
+
+            li {
+                position:relative;
+                width:49%;
+                font-size:18px;
+                line-height:1.3;
+                letter-spacing:-.025rem;
+                padding:0 0 0 40px;
+
+                .num {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    color:$pmg_nav;
+                }
+
+                a {
+                    display:inline-block;
+                    word-break:keep-all;
+                }
+            }
+
+            
+        }
+    }
+}
+
+.wiki {
+    &__container {
+        position:relative;
+        display:flex;
+        width:1200px;
+        min-height:calc(100vh - 161px);
+        margin:0 auto;
+    }
+
+    &__side {
+        position:sticky;
+        top:80px;
+        left:0;
+        width:18.75%;
+        height:calc(100vh - 161px);
+        padding:48px 20px;
+        border-right:1px solid $g_s5;
+        overflow-x:hidden;
+        overflow-y:auto;
+        z-index:9;
+
+        &__nav {
+            a:hover {
+                color:$c_primary;
+            }
+
+            & > li {
+                margin:20px 0 0;
+                letter-spacing:-.015em;
+
+                &:first-child {
+                    margin:0;
+                }
+
+                & > a {
+                    font-size:20px;
+                    line-height:1.4;
+                }
+
+                &.on {
+                    .wiki__side__dep {
+                        display:block;
+                    }
+
+                    & > a {
+                        font-weight:700;
+                        color:$c_primary;
+                    }
+                }
+            }
+        }
+
+        &__dep {
+            display:none;
+            padding:4px 0 10px 16px;
+
+            li {
+                margin:8px 0 0;
+            }
+
+            a {
+                font-size:17px;
+                line-height:1.2;
+            }
+        }
+    }
+
+    &__contents {
+        width:81.25%;
+        padding:48px 23px 48px 40px;
+
+        &__inner {
+            font-size:17px;
+            line-height:1.4;
+            letter-spacing:-.025em;
+            color:$g_s1;
+            word-break:keep-all;
+        }
+
+        $output : (
+            1 : 32px,
+            2 : 28px,
+            3 : 22px,
+            4 : 20px,
+            5 : 14px
+        );
+
+        @each $i, $size in $output {
+            h#{$i} {
+                font-size:$size;
+                font-weight:500;
+            }
+        }
+
+        h1 {
+            margin:0 0 32px;
+            color:$c_dark;
+        }
+
+        h2 {
+            padding:20px 0 16px;
+            color:$c_dark;
+        }
+
+        h3 {
+            padding:16px 0 0;
+        }
+
+        ul, ol, p {
+            line-height:1.6;
+            padding-bottom:1.2em;
+        }
+
+        ol {
+            padding-left:1.2em;
+            list-style: decimal;
+
+            li {
+                margin:.6em 0 0;
+
+                & > a {
+                    color:$c_primary;
+                }
+            }
+        }
+
+        ul {
+            li {
+                padding-left:1em;
+                
+                & > a {
+                    color:$c_primary;
+                }
+            }
+        }
+
+        p {
+            & > a {
+                color:$c_primary;
+            }
+        }
+
+        strong, b {
+            font-weight:700;
+        }
+
+        img, video {
+            max-width:100%;
+            border:1px solid $g_s5;
+            border-radius:8px;
+            margin:12px 0;
+            vertical-align:middle;
+        }
+
+        a {
+            &:hover {
+                color:$c_primary;
+                text-decoration:underline;
+            }
+        }
+
+        blockquote {
+            display:inline-block;
+            padding-left:1.2em;
+            border-left:4px solid $g_s4;
+            color:$g_s3;
+            margin:.6em 0 1.2em;
+
+            p:last-of-type {
+                padding-bottom:0;
+            }
+        }
+
+        .faq__lst {
+            li {
+                & > a {
+                    color:$c_dark;
+                }
+            }
+        }
+    }
+
+    &__sch {
+        padding:48px 24px;
+
+        &__lst {
+            li {
+                line-height:1.4;
+                letter-spacing:-.025em;
+                margin:32px 0 0;
+
+                &:first-child {
+                    margin-top:0;
+                }
+
+                p {
+                    font-size:17px;
+                    color:$g_s1;
+                    @include text-ellipsisClamp(2, 22px)
+                }
+            }
+        }
+
+        &__ttl {
+            display:inline-block;
+            font-size:24px;
+            margin:0 0 8px;
+            transition:none;
+
+            &:hover {
+                color:$c_primary;
+                text-decoration:underline;
+            }
+        }
+    }
+}
